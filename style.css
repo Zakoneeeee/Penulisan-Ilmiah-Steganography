@@ -1,0 +1,152 @@
+/* General Layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #007acc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* Header */
+.page-header h1 {
+  margin-top: 0;
+  color: #007acc;
+  text-align: center;
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+  margin-bottom: 20px;
+}
+
+.nav-tabs li a {
+  color: #007acc;
+  font-weight: bold;
+}
+
+.nav-tabs > li.active > a {
+  background-color: #e6f2ff;
+  border-color: #007acc;
+  color: #007acc;
+}
+
+/* Forms and Inputs */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea.message {
+  resize: vertical;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.btn-default {
+  background-color: #007acc;
+  color: white;
+  border: none;
+}
+
+.btn-default:hover {
+  background-color: #005f99;
+}
+
+/* Alerts */
+.alert-info {
+  background-color: #e6f2ff;
+  border: 1px solid #b3daff;
+  color: #004d80;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Sections */
+.binary, .binary-decode, .images, .decode {
+  margin-top: 20px;
+}
+
+.images h3,
+.decode h3,
+.binary h3,
+.binary-decode h3 {
+  color: #007acc;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  font-size: 14px;
+  color: #777;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .btn {
+    width: 100%;
+  }
+
+  .nav-tabs > li {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+    .switch-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .switch-buttons button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      background-color: #007acc;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .switch-buttons button.active {
+      background-color: #005f99;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
