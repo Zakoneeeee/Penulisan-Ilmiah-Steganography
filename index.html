@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Steganography Online</title>
+  <title>Steganografi Online</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <div class="page-header">
-      <h1>Steganography Online</h1>
+      <h1>Steganografi Online</h1>
     </div>
 
     <div class="switch-buttons">
@@ -19,14 +19,14 @@
     <div id="sectionEncode" class="section active">
       <h2>Encode Message</h2>
       <p class="alert alert-info">
-        Choose an image, enter your message, then click <strong>Encode</strong>. The result will contain your hidden message.
+        Pilih gambar, masukan pesan yang ingin di sembunyikan , lalu klik <strong>Encode</strong>. Lalu simpan Foto dengan klik kanan pada gambar dan hasilnya akan berisi pesan tersembunyi Anda.
       </p>
       <form class="form">
         <div class="form-group">
           <input class="form-control" type="file" name="baseFile" onchange="previewEncodeImage()">
         </div>
         <div class="form-group">
-          <textarea class="form-control message" rows="3" placeholder="Enter your message here"></textarea>
+          <textarea class="form-control message" rows="5" placeholder="Masukan Kata yang ingin di sembunyikan"></textarea>
         </div>
         <div class="form-group">
           <button type="button" class="encode btn btn-default pull-right" onclick="encodeMessage()">Encode</button>
@@ -34,12 +34,12 @@
       </form>
 
       <div class="binary" style="display: none;">
-        <h3>Binary representation</h3>
+        <h3>Representasi Biner</h3>
         <textarea class="form-control message" style="word-wrap: break-word;"></textarea>
       </div>
       <div class="images" style="display: none;">
         <div class="original" style="display: none;">
-          <h3>Original Image</h3>
+          <h3>gambar original</h3>
           <canvas></canvas>
         </div>
         <div class="nulled" style="display: none;">
@@ -48,6 +48,7 @@
         </div>
         <div class="message" style="display: none;">
           <h3>Message Hidden</h3>
+          <h4>Klik kanan untuk mendownload gambar</h4>
           <canvas></canvas>
         </div>
       </div>
@@ -57,7 +58,7 @@
     <div id="sectionDecode" class="section">
       <h2>Decode Message</h2>
       <p class="alert alert-info">
-        Upload an image that contains a hidden message, then click <strong>Decode</strong> to reveal it.
+        Pilihlah gambar yang berisi pesan tersembunyi, Lalu klik <strong>Decode</strong> Untuk melihat hasil dari Encodenya.
       </p>
       <form class="form">
         <div class="form-group">
