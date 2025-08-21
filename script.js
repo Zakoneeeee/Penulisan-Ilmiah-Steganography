@@ -55,7 +55,7 @@ function encodeMessage() {
   const height = $orig[0].height;
 
   if (msg.length * 8 > width * height * 3) {
-    $(".error").text("Text too long for chosen image....").fadeIn();
+    $(".error").text("Pesan terlalu panjang untuk gambar yang dipilih....").fadeIn();
     return;
   }
 
